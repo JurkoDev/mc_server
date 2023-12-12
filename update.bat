@@ -1,4 +1,5 @@
 @echo off
+cd /d %~dp0
 IF EXIST .git (
     echo setup uz bol
 ) ELSE (
