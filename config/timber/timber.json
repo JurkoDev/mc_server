@@ -1,0 +1,26 @@
+{
+  "mod": {
+    "breakLeaves": {
+      "comment": " Cuts down leaves aswell, true to enable, false to disable. Default: true.",
+      "value": true
+    },
+    "reverse": {
+      "comment": " Reverses the control of sneaking, if false then sneaking and chopping will disable the Timber Mod, if true then it\u0027s in reverse. Default: false.",
+      "value": false
+    },
+    "breakLeavesLimit": {
+      "comment": " Limit to how many leaves that will be cut down. Default: 300.",
+      "value": 300
+    },
+    "damageAxe": {
+      "comment": " Will damage the axe with the amount of logs chopped, true to enable, false to disable. Default: true.",
+      "value": true
+    }
+  },
+  "creative": {
+    "dropItems": {
+      "comment": " Timber Mod will drop items in creative mode aswell, true to enable, false to disable. Default: false.",
+      "value": false
+    }
+  }
+}
