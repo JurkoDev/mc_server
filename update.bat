@@ -11,4 +11,8 @@ IF EXIST .git (
     git checkout -f master 
 )
 echo updatujem
+git fetch
+git checkout -f origin/master
+git checkout master
 git pull
+pause
