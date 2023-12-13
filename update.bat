@@ -5,8 +5,10 @@ IF EXIST .git (
 ) ELSE (
     echo setupujem
     echo PRIDAJ SI PSYCHADELIC CHEMISTRY MANUALNE
-    git init
+    git init .
     git remote add origin "https://github.com/JurkoDev/mc_server.git"
+    git fetch origin
+    git checkout -f master 
 )
 echo updatujem
-git pull origin master
+git pull
