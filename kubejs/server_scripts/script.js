@@ -17,6 +17,9 @@ onEvent('recipes', event => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
+		{ mod: 'ae2' },
+		{ mod: 'merequester' },
+		{ mod: 'psychadelic' },
 
         { mod: 'computercraft' },
         // { mod: 'superiorshields' },
@@ -26,6 +29,10 @@ onEvent('recipes', event => {
         // { mod: 'rftoolsbuilder' },
         // { mod: 'rftoolsbase' },
         // { mod: 'shrink' },
+
+		{ input: 'minecraft:copper_ingot', output: 'coinsje:copper_coin' },
+		{ input: 'minecraft:iron_ingot', output: 'coinsje:iron_coin' },
+		{ input: 'minecraft:gold_ingot', output: 'coinsje:gold_coin' },
 
         // { output: /pneumaticcraft:.*_upgrade/ },
         // { output: /powah:player_transmitter.*/ },
