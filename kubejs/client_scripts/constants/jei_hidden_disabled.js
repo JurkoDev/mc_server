@@ -19,6 +19,7 @@ const jei = {
 jei.base.items.disabled = [
     /theoneprobe/,
     /computercraft:/,
+    /ae2:/,
 ];
 jei.base.items.hidden = [];
 jei.base.fluids.hidden = [];
