@@ -698,6 +698,23 @@ onEvent('recipes', event => {
     });
 })
 
+
+onEvent('recipes', event => {
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": {
+		  "item": "minecraft:blaze_rod"
+		},
+		"result": {
+		  "fluid": "tconstruct:scorched_stone",
+		  "amount": 10
+		},
+		"temperature": 1000,
+		"time": 40,
+	  })
+})
+
+
 onEvent('item.tags', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
