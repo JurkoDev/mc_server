@@ -706,7 +706,7 @@ onEvent('recipes', event => {
 		  "item": "minecraft:blaze_rod"
 		},
 		"result": {
-		  "fluid": "tconstruct:scorched_stone",
+		  "fluid": "tconstruct:blazing_blood",
 		  "amount": 10
 		},
 		"temperature": 1000,
