@@ -1,14 +1,14 @@
-// priority: 0
+// priority: 1000
 
 settings.logAddedRecipes = true
 settings.logRemovedRecipes = true
 settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
-console.info('Hello, World! (You will see this line every time server resources reload)')
+console.log('removing recipies')
 
 onEvent('recipes', event => {
-  console.info('recipes remove')
+  console.log('recipes remove')
 	// Change recipes here
 	const recipes = [
         // {
@@ -692,38 +692,11 @@ onEvent('recipes', event => {
         // { id: 'thermal:machines/pulverizer/pulverizer_diorite' },
         // { id: 'thermal:machines/pulverizer/pulverizer_granite' },
         // { id: 'thermal:machines/pulverizer/pulverizer_andesite' }
-    ];
+  ];
 
-    recipes.forEach((recipe) => {
-        event.remove(recipe);
-    });
-  console.info('recipies add')
-
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": {
-		  "item": "minecraft:blaze_rod"
-		},
-		"result": {
-		  "fluid": "tconstruct:blazing_blood",
-		  "amount": 10
-		},
-		"temperature": 1000,
-		"time": 40,
-	  })
-    event.shaped(
-      Item.of('computercraft:computer_normal', 1), // arg 1: output
-      [
-        'AAA',
-        'ABA', // arg 2: the shape (array of strings)
-        'ACA'
-      ],
-      {
-        A: 'create:andesite_alloy',
-        B: 'minecraft:redstone',  //arg 3: the mapping object
-        C: 'minecraft:glass'
-      }
-    )
+  recipes.forEach((recipe) => {
+      event.remove(recipe);
+  });
 })
 
 
