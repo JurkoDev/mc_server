@@ -8,6 +8,7 @@ settings.logErroringRecipes = true
 console.info('Hello, World! (You will see this line every time server resources reload)')
 
 onEvent('recipes', event => {
+  console.info('recipes remove')
 	// Change recipes here
 	const recipes = [
         // {
@@ -696,10 +697,8 @@ onEvent('recipes', event => {
     recipes.forEach((recipe) => {
         event.remove(recipe);
     });
-})
+  console.info('recipies add')
 
-
-onEvent('recipes', event => {
 	event.custom({
 		"type": "tconstruct:melting",
 		"ingredient": {
@@ -712,6 +711,19 @@ onEvent('recipes', event => {
 		"temperature": 1000,
 		"time": 40,
 	  })
+    event.shaped(
+      Item.of('computercraft:computer_normal', 1), // arg 1: output
+      [
+        'AAA',
+        'ABA', // arg 2: the shape (array of strings)
+        'ACA'
+      ],
+      {
+        A: 'create:andesite_alloy',
+        B: 'minecraft:redstone',  //arg 3: the mapping object
+        C: 'minecraft:glass'
+      }
+    )
 })
 
 
