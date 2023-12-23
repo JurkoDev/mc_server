@@ -194,6 +194,12 @@ onEvent('recipes', event => {
     "minecraft:flint",
     Fluid.of('minecraft:lava', 100)
   ]).heated()
+
+  event.recipes.createCompacting('minecraft:redstone', [
+    "minecraft:nether_wart_block",
+    "minecraft:nether_wart_block",
+    Fluid.of('minecraft:water', 100)
+  ]).heated()
 })
 
 
