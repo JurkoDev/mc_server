@@ -180,7 +180,7 @@ onEvent('recipes', event => {
 
 
 
-  event.createMixing('minecraft:cobbled_deepslate', [
+  event.recipes.createMixing('minecraft:cobbled_deepslate', [
     "#forge:cobblestone/normal",
     "#forge:cobblestone/normal",
     "#forge:gravel",
@@ -188,7 +188,7 @@ onEvent('recipes', event => {
     Fluid.of('minecraft:lava', 100)
   ]).heated()
 
-  event.createCompacting('minecraft:tuff', [
+  event.recipes.createCompacting('minecraft:tuff', [
     "#forge:deepslate",
     "#forge:deepslate",
     "minecraft:flint",
