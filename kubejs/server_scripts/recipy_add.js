@@ -177,6 +177,23 @@ onEvent('recipes', event => {
   //     'minecraft:redstone'  //arg 3: the mapping object
   //   ]
   // )
+
+
+
+  event.createMixing('minecraft:cobbled_deepslate', [
+    "#forge:cobblestone/normal",
+    "#forge:cobblestone/normal",
+    "#forge:gravel",
+    "#forge:gravel",
+    Fluid.of('minecraft:lava', 100)
+  ]).heated()
+
+  event.createCompacting('minecraft:tuff', [
+    "#forge:deepslate",
+    "#forge:deepslate",
+    "minecraft:flint",
+    Fluid.of('minecraft:lava', 100)
+  ]).heated()
 })
 
 

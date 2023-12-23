@@ -18,11 +18,11 @@ onEvent('recipes', event => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
-		{ mod: 'ae2' },
-		{ mod: 'merequester' },
+		// { mod: 'ae2' },
+		// { mod: 'merequester' },
 		{ mod: 'psychadelic' },
 
-        { mod: 'computercraft' },
+        // { mod: 'computercraft' },
         // { mod: 'superiorshields' },
         // { mod: 'mininggadgets' },
         // { mod: 'enigmaticunity' },
