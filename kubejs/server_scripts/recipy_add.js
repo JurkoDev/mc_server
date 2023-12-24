@@ -179,6 +179,16 @@ onEvent('recipes', event => {
   // )
 
 
+  event.custom({
+    "type":"createaddition:liquid_burning",
+    "input": {
+          "fluidTag": "tconstruct:blazing_blood",
+          "amount": 1000
+    },
+    "burnTime": 12000,
+    "superheated": true
+  })
+
 
   event.recipes.createMixing('minecraft:cobbled_deepslate', [
     "#forge:cobblestone/normal",
