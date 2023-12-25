@@ -210,6 +210,13 @@ onEvent('recipes', event => {
     "minecraft:nether_wart_block",
     Fluid.of('minecraft:water', 100)
   ]).heated()
+
+  //add the nether rack recipe again after changing the ratio
+  event.recipes.createMixing('2x minecraft:Netherrack', [
+    "forge:cobblestone",
+    "create:cinder_flour",
+    Fluid.of('minecraft:lava', 25)
+  ])
 })
 
 

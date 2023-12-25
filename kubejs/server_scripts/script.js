@@ -35,6 +35,9 @@ onEvent('recipes', event => {
 		{ input: 'minecraft:iron_ingot', output: 'coinsje:iron_coin' },
 		{ input: 'minecraft:gold_ingot', output: 'coinsje:gold_coin' },
 
+    //remove the neherrack recipe for changing the ratio
+    {id: "createaddition:mixing/netherrack"},
+
         // { output: /pneumaticcraft:.*_upgrade/ },
         // { output: /powah:player_transmitter.*/ },
         // { output: 'ae2:silicon' },
