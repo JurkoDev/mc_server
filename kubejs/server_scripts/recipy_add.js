@@ -213,7 +213,7 @@ onEvent('recipes', event => {
 
   //add the nether rack recipe again after changing the ratio
   event.recipes.createMixing('2x minecraft:netherrack', [
-    "forge:cobblestone",
+    "#forge:cobblestone",
     "create:cinder_flour",
     Fluid.of('minecraft:lava', 25)
   ])
