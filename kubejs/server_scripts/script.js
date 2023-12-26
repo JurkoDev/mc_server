@@ -38,6 +38,8 @@ onEvent('recipes', event => {
     //remove the neherrack recipe for changing the ratio
     {id: "createaddition:mixing/netherrack"},
 
+    {type: "createaddition:liquid_burning", input: {fluidTag: "tconstruct:blazing_blood",amount: 1000}}
+
         // { output: /pneumaticcraft:.*_upgrade/ },
         // { output: /powah:player_transmitter.*/ },
         // { output: 'ae2:silicon' },
