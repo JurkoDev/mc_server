@@ -188,6 +188,15 @@ onEvent('recipes', event => {
     "burnTime": 12000,
     "superheated": true
   })
+  
+  event.custom({
+    "type":"createaddition:liquid_burning",
+    "input": {
+          "fluidTag": "minecraft:lava",
+          "amount": 1000
+    },
+    "burnTime": 20000
+  })
 
 
   event.recipes.createMixing('minecraft:cobbled_deepslate', [
