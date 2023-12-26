@@ -22,7 +22,7 @@ onEvent('recipes', event => {
 		// { mod: 'merequester' },
 		{ mod: 'psychadelic' },
 
-        // { mod: 'computercraft' },
+        { mod: 'computercraft' },
         // { mod: 'superiorshields' },
         // { mod: 'mininggadgets' },
         // { mod: 'enigmaticunity' },
